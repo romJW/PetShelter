@@ -1,0 +1,123 @@
+$md1:1279.98px;
+.help-options-section {
+     max-width: 1200px;
+     margin: 0 auto;
+     margin-bottom: 75px;
+    @media (max-width:$md2){
+        margin-bottom: 10px;
+    }
+    &__title {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        color: #545454;
+
+        text-align: center;
+        letter-spacing: 0.06em;
+            @media (max-width: $md2) {
+                font-size: 25px;
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 15px;
+
+            }
+           
+    }
+
+    &__box {
+        padding-top: 10px;
+         
+        
+       
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 25px; 
+        column-gap:120px;
+        @media (max-width:$md1){
+           max-width:630px;
+           margin:0 auto;
+           column-gap:60px;
+           
+
+        }
+        
+        @media (max-width:$md2){
+            max-width:290px;
+            margin:0 auto;
+            column-gap:30px;
+            row-gap:17px;
+            
+ 
+         }
+         div:last-child{
+            @media (max-width:$md2){
+                    margin-right: 160px;
+            }
+         }
+        
+    }
+    
+    &__way {
+        @media (max-width:$md1){
+            display: flex;
+            width:170px;
+            
+            flex-direction:column;
+            align-items:center;
+            
+        
+    }
+    @media (max-width:$md2){
+        display: flex;
+        width:130px;
+        
+        flex-direction:column;
+        align-items:  center;
+       
+    }
+    
+}
+    &__img{
+        text-align: center;
+        @media (max-width:$md1){
+            margin-bottom: 20px;
+           
+        }
+        @media (max-width:$md2){
+            margin-bottom: 12px;
+           
+        }
+        img{
+            @media (max-width:$md2){
+               max-width: 50px;
+               
+               
+            }
+        }
+        }
+    
+
+    &__description {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+
+        text-align:center;
+        @media (max-width:$md1){
+            margin-top: 0;
+        }
+        
+        @media (max-width:$md2){
+            margin-bottom: 0;
+            font-size:15px;
+
+        }
+    }
+}

@@ -1,0 +1,130 @@
+$md1:1279.98px;
+
+.description-block {
+    max-width:1200px;
+    margin: 0 auto;
+    display: flex;
+    
+    padding:0 215px;
+  
+    margin-bottom: 90px;
+    gap:120px;
+
+    @media (max-width:$md1){
+        padding: 0 0px;
+        max-width: 437px;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 110px;
+        gap:0;
+        
+    }
+    @media (max-width:$md2){
+        padding: 0 0px;
+        max-width: 300px;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        padding-top: 5px;
+         padding-bottom: 15px;
+        gap:0;
+
+        
+    }
+    
+    &__img {
+        margin-right:120px;
+        
+            max-width: 100%;
+            margin: 0 auto;
+            img{
+                @media (max-width:$md2) {
+                    max-width:260px;
+                    
+                    }
+            }
+            
+    }
+
+    &__content {
+        @media (max-width:$md1){
+            max-width: 437px;
+            margin: 0 auto;
+            margin-bottom:55px;
+             
+            }
+            @media (max-width:$md1){
+                max-width: 430px;
+                margin: 0 auto;
+                margin-bottom:55px;
+                 
+                }
+                @media (max-width:$md2){
+                    max-width: 300px;
+                    margin: 0 auto;
+                    margin-bottom:30px;
+                     
+                    }
+        }
+    
+
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+
+        letter-spacing: 0.05em;
+        color: #545454;
+        @media (max-width:$md1){
+            width: 370px;
+
+            margin-top:0;
+            margin-bottom:25px;
+        }
+        @media (max-width:$md2){
+         
+            max-width: 300px;
+            font-size: 25px;
+            margin-top: 0;
+            text-align: center;
+            
+            margin-bottom: 28px;
+            
+        }
+       
+    }
+
+    &__info {
+        margin-top:0px;
+
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+
+        max-width:430px;
+
+        margin-bottom:25px;
+     
+        @media (max-width:$md1) {
+            max-width:430px;
+            margin-bottom: 20px;
+        
+            }
+        @media (max-width:$md2) {
+         max-width:270px;
+         margin-left: 15px;
+        margin-bottom: 15px;
+        text-align: justify;
+        
+    
+        }
+    }
+    
+}

@@ -1,0 +1,164 @@
+$md1:1279.98px;
+.donation-section {
+    max-width:1280px;
+    margin: 0 auto;
+background-color:#F6F6F6;
+
+    &__wrapper {
+        padding-top: 83px;
+        max-width: 1200px;
+
+        display: flex;
+        justify-content: center;
+        
+
+        
+
+         margin: 0 auto;
+         padding-bottom: 80px;
+
+         @media (max-width:$md1){
+
+            flex-direction: column-reverse;
+            align-items: center;
+            
+            }
+            @media (max-width:$md2){
+                padding-bottom: 15px;
+            }
+    }
+
+    &__img {
+        margin-right: 30px;
+        @media (max-width:$md1){
+            margin-right: 10px;
+        }
+        img{ 
+        @media (max-width:$md2){
+            max-width:260px
+        }
+    }
+    }
+
+    &__payment-block {
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+            @media (max-width:$md1){
+                padding-bottom: 40px;
+        }
+        @media (max-width:$md2){
+            padding-bottom: 30px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        
+        @media (max-width:$md2){
+            font-size:25px;
+            text-align: center;
+    
+            }
+    }
+
+    &__bank {
+        margin: 0;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+
+        letter-spacing: 0.06em;
+        @media (max-width:$md2){
+            font-size: 15px;
+            text-align: center;
+            letter-spacing: 0;
+            }
+
+    }
+
+    &__card {
+        width: 349px;
+        height: 43px;
+      
+
+        background: #F1CDB3;
+        border-radius: 9px;
+
+        display: flex;
+        justify-content:flex-end;
+
+        position: relative;
+        @media (max-width:$md2){
+          width: 281px;
+            margin: 0 auto;
+            }
+       
+    }
+    &__card::before{
+        content: "";
+
+        background: url(../img/credit-card.svg);
+        position: absolute;
+        width: 30px;
+        height: 23px;
+
+        left:4.5%;
+        top:21%;
+
+
+    }
+
+    &__card-number {
+        margin: 0;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+
+        letter-spacing: 0.06em;
+
+        align-self: center;
+
+        margin-right:15px;
+
+        a{
+            text-decoration: none;
+            color: #545454;
+
+        }
+        @media (max-width:$md2){
+            font-size:15px;
+            
+    
+            }
+    }
+
+    &__info {
+        margin:0;
+        font-family: 'Arial';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+
+        color: #B2B2B2;
+
+        @media (max-width:$md2){
+            width: 280px;
+
+            text-align: center;
+    
+            }
+    }
+}

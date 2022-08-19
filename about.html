@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Про Нас" })
+  <body>
+    <header class="header-container ">
+      <div class="header__content">
+      <div class="header__title-section ">
+        <a href="index.html">
+         <h1 class="header__title light-title">Cozy House</h1>
+         <p class="header__title-description light-description">Shelter for pets in Boston</p>
+        </a>
+      </div>
+      <nav class="nav-bar">
+         <p class="nav-bar__light-option"><a href="index.html">About the shelter</a></p>
+         <p class="nav-bar__light-option active"><a href="about.html">Our pets</a></p>
+         <p class="nav-bar__light-option"><a href="index.html#help">Help the shelter</a></p>
+         <p class="nav-bar__light-option"><a href="#footer">Contacts</a></p>
+      </nav>
+      <div class="menu__icon icon-menu light">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+      
+    </div>
+       
+   </header>
+    <main>
+      <div class="carousel-section wrap" id="slider">
+        <div class="carousel-section__inner">
+        <h3 class="carousel-section__title-search slider-title">Our friends who <br>
+          are looking for a house</h3>
+            
+            <div class="carousel-section__slide gap40">
+              <div class="carousel-section__card">
+               <img src="@img/pets-katrine.png" alt="Katrine" class="carousel-section__img">
+               <p class="carousel-section__name">Katrine</p>
+               <button class="carousel-section__info-btn">Learn more</button>
+              </div>
+              <div class="carousel-section__card">
+                <img src="@img/pets-jennifer.png" alt="Jennifer" class="carousel-section__img">
+                <p class="carousel-section__name">Jennifer</p>
+                <button class="carousel-section__info-btn">Learn more</button>
+               </div>
+               <div class="carousel-section__card">
+                <img src="@img/pets-woody.png" alt="Woody" class="carousel-section__img">
+                <p class="carousel-section__name">Woody</p>
+                <button class="carousel-section__info-btn">Learn more</button>
+               </div>
+               
+               <div class="carousel-section__card">
+                <img src="@img/pets-sophia.png" alt="Sophia" class="carousel-section__img">
+                <p class="carousel-section__name">Sophia</p>
+                <button class="carousel-section__info-btn">Learn more</button>
+               </div>
+               <div class="carousel-section__card">
+                <img src="@img/pets-timmy.png" alt="Timmy" class="carousel-section__img">
+                <p class="carousel-section__name">Timmy</p>
+                <button class="carousel-section__info-btn">Learn more</button>
+               </div>
+               <div class="carousel-section__card">
+                <img src="@img/pets-charly.png" alt="Charly" class="carousel-section__img">
+                <p class="carousel-section__name">Charly</p>
+                <button class="carousel-section__info-btn">Learn more</button>
+               </div>
+               <div class="carousel-section__card">
+                <img src="@img/pets-scarlet.png" alt="Scarlet" class="carousel-section__img">
+                <p class="carousel-section__name">Scarlet</p>
+                <button class="carousel-section__info-btn">Learn more</button>
+               </div>
+               <div class="carousel-section__card">
+                <img src="@img/pets-freddie.png" alt="Freddie" class="carousel-section__img">
+                <p class="carousel-section__name">Freddie</p>
+                <button class="carousel-section__info-btn">Learn more</button>
+               </div>
+            </div>
+           
+          
+          <div class="carousel-section__pagination">
+            <div class="carousel-section__page-prev">&lt;&lt;</div>
+            <div class="carousel-section__page-left">&lt;</div>
+            <div class="carousel-section__page">1</div>
+            <div class="carousel-section__page-right">&gt;</div>
+            <div class="carousel-section__page-next">&gt;&gt;</div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    @@include('html/footer.html',{ })
+  </body>
+</html>
+

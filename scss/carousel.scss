@@ -1,0 +1,307 @@
+$md1:1279.98px;
+.carousel-section {
+    background: #F6F6F6;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    &__wrapper{
+        max-width:1200px;
+         display: flex;
+         flex-direction: column;
+        align-items: center;
+         margin: 0 auto;
+        margin-bottom: 85px;
+
+        padding-top: 80px;
+        padding-bottom:100px;
+        @media (max-width:$md1){
+            padding-top: 78px;
+        }
+        @media (max-width:$md2){
+            max-width: 300px;
+            padding-bottom: 0;
+            padding-top: 65px;
+            
+        }
+    }
+    
+    &__title {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-top: 0px;
+
+        margin-bottom:55px ;
+
+        text-align: center;
+
+        @media (max-width:$md2){
+            min-width: 300px;
+            font-size: 25px;
+            margin-bottom:40px;
+        }
+
+        
+    }
+
+    &__slider-box {
+        display: flex;
+        align-items: center;
+        @media (max-width:$md1){
+        max-width:708px;
+        gap:12px;
+
+        }
+        @media (max-width:$md2){
+            max-width:270px;
+            flex-direction: column;
+            gap:12px;
+    
+            }
+       
+        
+    }
+
+    &__left-btn {
+        background: #FAFAFA;
+        background: url(../img/Arrow_left.svg)  no-repeat center;
+       
+
+        width: 52px;
+        height: 52px;
+
+        border: 2px solid #F1CDB3;
+        box-sizing: border-box;
+        border-radius: 100px;
+
+        padding: 23px 19px;
+
+        transition:0.5s;
+        @media (max-width:$md2){
+           display: none;
+    
+            }
+    }
+    &__left-btn:hover{
+        cursor: pointer;
+        background-color: #FDDCC4;
+        border-color:#FDDCC4 ;
+        background-image: url(../img/Arrow_left.svg)  no-repeat center;
+    }
+
+   
+    &__right-btn {
+       
+        background: url(../img/Arrow_right.svg)  no-repeat center;
+
+        
+
+        width: 52px;
+        height: 52px;
+
+        
+
+    
+
+        border: 2px solid #F1CDB3;
+        box-sizing: border-box;
+        border-radius: 100px;
+
+        padding: 23px 19px;
+
+        transition:0.5s;
+
+    }
+    &__right-btn:hover{
+        cursor: pointer;
+        background-color: #FDDCC4;
+        border-color:#FDDCC4 ;
+        background-image: url(../img/Arrow_right.svg)  no-repeat center;
+    }
+
+    
+
+    &__slider {
+        display: flex;
+       align-items: center;
+
+       margin: 0 53px;
+       gap:90px;
+       @media (max-width:$md1){
+        gap: 40px;
+        margin:0 auto;
+       }
+       @media (max-width:$md2){
+           
+        gap: 40px;
+        margin:0 auto;
+       }
+    
+    
+       div:last-child{ 
+       @media (max-width:$md1){
+       display:none;
+
+    }
+}
+    div:nth-child(2){
+        @media(max-width:$md2) {
+            display: none;
+            
+        }
+    }
+       
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 ;
+        background: #FAFAFA;
+        border-radius: 9px;
+
+        transition:0.5s;
+        @media (max-width:$md2) {
+            margin-bottom: 5px;
+        }
+    }
+    &__card:hover{
+        cursor: pointer;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+
+        
+        .carousel-section__info-btn{
+            background: #FDDCC4;
+            cursor:pointer;
+        }
+
+    }
+    
+
+    &__img {
+        
+    }
+
+    &__name {
+        margin-bottom: 0px;
+        margin-top: 30px;
+
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+
+        text-align: center;
+
+    }
+
+    &__info-btn {
+        background: #FAFAFA;
+
+        border: 2px solid #F1CDB3;
+        box-sizing: border-box;
+        border-radius: 100px;
+
+        padding: 15px 45px;
+
+        width: 187px;
+        height: 52px;
+
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+
+        color: #292929;
+
+        
+        
+         margin: 30px 0px;
+
+         transition:0.5s;
+
+         @media (max-width:$md2) {
+            
+         }
+
+    }
+
+   
+
+    &__search-btn {
+        width: 261px;
+        height: 52px;
+
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        
+        white-space: nowrap;
+
+    
+        border: none;
+        background: #F1CDB3;
+        border-radius: 100px;
+
+        border-color:#F1CDB3;
+
+        margin-top: 60px;
+
+        
+        transition:0.5s;
+        
+        @media (max-width: $md2) {
+            margin-top: 45px;
+        }
+    }
+
+    &__search-btn:hover{
+        background: #FDDCC4;
+        border-color:#FDDCC4;
+        cursor: pointer;
+    }
+}
+.carousel-section__buttons{
+    display: flex;
+    gap:80px;
+}
+.left-btn{
+    display: none;
+    background: #FAFAFA;
+        background: url(../img/Arrow_left.svg)  no-repeat center;
+       
+
+        width: 52px;
+        height: 52px;
+
+        border: 2px solid #F1CDB3;
+        box-sizing: border-box;
+        border-radius: 100px;
+
+        padding: 23px 19px;
+
+        transition:0.5s;
+        
+    @media (max-width: $md2) {
+        display:block;
+    }
+            
+    }
+    .left-btn:hover{
+        cursor: pointer;
+        background-color: #FDDCC4;
+        border-color:#FDDCC4 ;
+        background-image: url(../img/Arrow_left.svg)  no-repeat center;
+    }
